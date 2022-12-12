@@ -1,0 +1,23 @@
+| Word      | Description |
+| ----------- | ----------- |
+| function      | A mapping from the function's domain to its image (which is a subset of the co-domain). Every Haskell function is an expression that takes one argument. They always return a result. Functions are in prefix style by default. |
+| lambda calculus   | Lambda calculus (also written as λ-calculus) is a formal system in mathematical logic for expressing computation based on function abstraction and application using variable binding and substitution.        |
+| Combinators |  lambda terms with no free variables |
+| Beta reduction | the process of replacing all occurrences of a parameter with a value or a function; for example `(λx.x + x)1` becomes `1` or `(λx.x)(λa.2a)` turns into `(λa.2a)`. |
+| expression | An expression is in normal form, or irreducible, when there are no more evaluations steps that can be taken. |
+| function parameter | A function parameter stands for a value, while an argument is an actual value that is being passed on to the function. Functions are in prefix style by default. |
+| infix notation | Functions in Haskell are usually called using prefix notation, or the function name followed by its arguments. However, some functions e.g. addition are called using infix notation - putting the function name between its two arguments |
+| expression | An expression is a combination of symbols that conforms to syntactic rules and can be evaluated to some result. |
+| value | A value is an expression that can not be evaluated any further. Haskell uses lazy evaluation, i.e. it only evaluates an expression when it is forced to by other terms which refer to the expression. |
+| String | `String` is a type alias for `[Char]`, i.e. a list of characters. |
+| type | A type or datatype is a classification of values or data. Types in Haskell determine what values are members of the type or that inhabit the type. Unlike in other languages, datatypes in Haskell by default do not delimit the operations that can be performed on that data. |
+| Binding | the assignment of an argument to a parameter |
+| Pointfree | versions of functions drop arguments for the sake of readability and performance. For example, `print a = (putStrLn . show) a` becomes `print = putStrLn . show`. |
+| Point-free | is programming tacitly, or without mentioning arguments by name. This tends to look like “plumby” code where you’re routing data around implicitly or leaving off unnecessary arguments, thanks to currying. The “point” referred to in the term point-free is an argument. |
+| Composition | the application of a function to the result of hav- ing applied another function. The composition operator is a higher-order function, as it takes the functions it composes as arguments and then returns a function of the composition. |
+| Higher-order functions | functions which themselves take functions as arguments or return functions as results. Due to currying, technically any function that appears to take more than one argument is higher-order in Haskell. |
+| Bottom | a non-value used to denote that the program cannot return a value or result. The most elemental manifestation of this is a program that loops infinitely. Other forms can involve things like writing a function that doesn’t handle all of its inputs and fails on a pattern match. |
+| Pattern matching | a syntactic way of deconstructing product and sum types to get at their inhabitants. With respect to products, pattern matching gives you the means for destructuring and exposing the contents of products, binding one or more values contained therein to names. With sums, pattern matching lets you discriminate which inhabitant of a sum you mean to handle in that match. |
+| Currying | the process of transforming a function that takes multiple arguments into a series of functions that each take one argument and return one result. This is accomplished through nesting. In Haskell, all functions are curried by default. You don’t need to do anything special yourself. curry and uncurry already exist in Prelude. |
+| anonymous function | a function that is not bound to an iden- tifier and is instead passed as an argument to another function and/or used to construct another function. |
+| Binding or bound | a common word used to indicate connection, linkage, or association between two objects. In Haskell, we use it to talk about what value a variable has, e.g., a parameter variable is bound to an argument value, meaning the value is passed into the parameter as input and each occurrence of that named parameter will have the same value. Bindings as a plurality will usually refer to a collection of variables and functions that can be referenced by name |
