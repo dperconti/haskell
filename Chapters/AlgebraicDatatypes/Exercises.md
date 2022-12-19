@@ -49,3 +49,63 @@ a -> DogueDeBordeaux a
 ❯ runhaskell TypeTest.hs
 type is: DogueDeBordeaux [Char]
 ```
+
+
+## Exercises: Vehicles
+
+```haskell
+main :: IO ()
+
+data Price = Price Integer deriving (Eq, Show)
+data Manufacturer = Mini | Mazda | Tata deriving (Eq, Show)
+data Airline = PapuAir | CatapultsR'Us | TakeYourChancesUnited deriving (Eq, Show)
+data Vehicle = Car Manufacturer Price | Plane Airline deriving (Eq, Show)
+
+myCar = Car Mini (Price 14000)
+urCar = Car Mazda (Price 20000)
+clownCar = Car Tata (Price 7000)
+doge = Plane PapuAir
+```
+
+1. What is the type of `myCar`?
+```haskell
+❯ runhaskell TypeTest.hs
+type is: Vehicle
+```
+
+2. Given the following, define the functions:
+
+```haskell
+isCar :: Vehicle -> Bool
+-- Based on the definition of `Vehicle`, this will either be a Car or a Place. We pattern match off of Car, and return True
+-- Throw away the rest of the values, and have a default of False
+isCar (Car _ _) = True
+isCar _ = False
+-- Verified by `isCar myCar`
+
+isPlane :: Vehicle -> Bool
+isPlane (Plane _) = True
+isPlane _ = False
+-- Verified by `isPlane doge`
+
+areCars :: [Vehicle] -> [Bool]
+-- We can just use map to map the function `isCar` to the list of Vehicles
+areCars = map isCar
+```
+
+3.
+
+```haskell
+getManu :: Vehicle -> Manufacturer
+-- in order to get the Manufacturer, which only exists on Vehicle of type Car, we must pattern match on both of those values
+getManu (Car m _) = m
+-- getMany _ = "Not a Car" -- I would need to use Either here, but let's not get into that now
+```
+
+4. No exhaustive cases error
+
+5.
+
+```haskell
+data Vehicle = Car Manufacturer Price | Plane Airline Integer
+```
