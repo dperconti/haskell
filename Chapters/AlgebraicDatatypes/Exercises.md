@@ -109,3 +109,27 @@ getManu (Car m _) = m
 ```haskell
 data Vehicle = Car Manufacturer Price | Plane Airline Integer
 ```
+
+## Exercises: Cardinality
+
+1.
+```haskell
+data PugType = PugData
+-- Answer is 1
+```
+
+2. For this one, recall that `Bool` is also defined with the `|` symbol:
+
+```haskell
+data Airline =
+      PapuAir
+    | CatapultsR'Us
+    | TakeYourChancesUnited
+-- Answer is 3
+```
+
+3. Given what we know about `Int8`, what’s the cardinality of `Int16`? The cardinality of `Int16` is `2^16 = 65536`.
+4. Use the REPL and `maxBound` and `minBound` to examine Int and Integer. What can you say about the cardinality of those types?
+  1. The cardinality of `Int` on my computer is `2^64 = 18446744073709551616`. The cardinality of `Integer` is infinite since `Integer` is not bound.
+5. Extra credit (impress your friends!): what’s the connection between the `8` in `Int8` and that type’s cardinality of `256`? `2^8`
+

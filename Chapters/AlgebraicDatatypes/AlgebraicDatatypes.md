@@ -28,6 +28,7 @@ l = Cons 1 $ Cons 2 $ Cons 3 Nil
 Algebraic datatypes in Haskell are algebraic because we can describe the patterns of argument structures using two basic operations: sum and product.
 
 cardinality
+- "the number of elements in a set or other grouping, as a property of that grouping."
 - Nullary constructors represent one value
 - Unary constructor always have the same cardinality as the type they contain.
 - Sum types are + or addition.
