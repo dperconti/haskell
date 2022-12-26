@@ -14,4 +14,4 @@ Learnings from [Haskell Programming From First Principles](http://haskellbook.co
 - [x] [Chapter 8: Recursion](./Chapters/Recursion/)
 - [x] [Chapter 9: Lists](./Chapters/Lists/)
 - [x] [Chapter 10: Folding Lists](./Chapters/FoldingLists/)
-- [ ] [Chapter 11: Algebraic Datatypes](./Chapters/AlgebraicDatatypes/)
+- [x] [Chapter 11: Algebraic Datatypes](./Chapters/AlgebraicDatatypes/)
