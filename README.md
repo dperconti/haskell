@@ -15,4 +15,4 @@ Learnings from [Haskell Programming From First Principles](http://haskellbook.co
 - [x] [Chapter 9: Lists](./Chapters/Lists/)
 - [x] [Chapter 10: Folding Lists](./Chapters/FoldingLists/)
 - [x] [Chapter 11: Algebraic Datatypes](./Chapters/AlgebraicDatatypes/)
-- [ ] [Chapter 12: Signaling Adversity](./Chapters/SignalingAdversity/)
+- [x] [Chapter 12: Signaling Adversity](./Chapters/SignalingAdversity/)
