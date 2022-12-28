@@ -16,6 +16,6 @@ Learnings from [Haskell Programming From First Principles](http://haskellbook.co
 - [x] [Chapter 10: Folding Lists](./Chapters/10FoldingLists/)
 - [x] [Chapter 11: Algebraic Datatypes](./Chapters/11AlgebraicDatatypes/)
 - [x] [Chapter 12: Signaling Adversity](./Chapters/12SignalingAdversity/)
-- [ ] [Chapter 13: Building Projects](./Chapters/13BuildingProjects/)
+- [x] [Chapter 13: Building Projects](./Chapters/13BuildingProjects/)
 - [ ] [Chapter 14: Testing](./Chapters/14Testing/)
 - [ ] [Chapter 15: Monoid and Semigroup](./Chapters/15MonoidandSemigroup/)
