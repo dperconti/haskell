@@ -18,4 +18,4 @@ Learnings from [Haskell Programming From First Principles](http://haskellbook.co
 - [x] [Chapter 12: Signaling Adversity](./Chapters/12SignalingAdversity/)
 - [x] [Chapter 13: Building Projects](./Chapters/13BuildingProjects/)
 - [x] [Chapter 14: Testing](./Chapters/14Testing/)
-- [ ] [Chapter 15: Monoid and Semigroup](./Chapters/15MonoidandSemigroup/)
+- [x] [Chapter 15: Monoid and Semigroup](./Chapters/15MonoidandSemigroup/)
