@@ -19,3 +19,6 @@ Learnings from [Haskell Programming From First Principles](http://haskellbook.co
 - [x] [Chapter 13: Building Projects](./Chapters/13BuildingProjects/)
 - [x] [Chapter 14: Testing](./Chapters/14Testing/)
 - [x] [Chapter 15: Monoid and Semigroup](./Chapters/15MonoidandSemigroup/)
+- [ ] [Chapter 16: Functor](./Chapters/16Functor/)
+- [ ] [Chapter 17: Applicative](./Chapters/17Applicative/)
+- [ ] [Chapter 18: Monad](./Chapters/18Monad/)
