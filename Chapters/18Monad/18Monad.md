@@ -46,6 +46,10 @@ The Monad **laws** are
 - Left identity `return x >>= f = f x`. Applying `return` leaves the data untouched.
 - Associativity `(m >>= f) >>= g = m >>= (\x -> f x >>= g)`. Regrouping the functions should not have any impact on the final result.
 
+- Left Identity Law − The return function does not change the value and it should not change anything in the Monad. It can be expressed as "return >=> mf = mf".
+- Right Identity Law − The return function does not change the value and it should not change anything in the Monad. It can be expressed as "mf >=> return = mf".
+- Associativity − According to this law, both Functors and Monad instance should work in the same manner. It can be mathematically expressed as "( f >==>g) >=> h =f >= >(g >=h)".
+
 Using Checkers (as in 17.2) with `quickBatch (monad [(a, b, c)])` where `a`, `b`, and `c` are three values which indicate the type to be used.
 
 The **Kleisli composition** (_fish_ operator: >=>) is about composing two functions which both return monads. It can be imported with import `Control.Monad ((>=>))` and has the following signature (in comparison to normal function composition):
@@ -65,45 +69,6 @@ instance Applicative (State s) where
   pure = return
   (<*>) = Control.Monad.ap
 ```
-
-# Monoids
-We all know Haskell defines everything in the form of functions. In functions, we have options to get our input as an output of the function. This is what a **Monoid** is.
-
-A **Monoid** is a set of functions and operators where the output is independent of its input. Let’s take a function (*) and an integer (1). Now, whatever may be the input, its output will remain the same number only. That is, if you multiply a number by 1, you will get the same number.
-
-Here is a Type Class definition of monoid.
-
-```haskell
-class Monoid m where
-   mempty :: m
-   mappend :: m -> m -> m
-   mconcat :: [m] -> m
-   mconcat = foldr mappend mempty
-```
-
-Take a look at the following example to understand the use of Monoid in Haskell.
-
-```haskell
-multi:: Int->Int
-multi x = x * 1
-add :: Int->Int
-add x = x + 0
-
-main = do
-   print(multi 9)
-   print (add 7)
-```
-
-
-Our code will produce the following output −
-
-```haskell
-9
-7
-```
-
-Here, the function "multi" multiplies the input with "1". Similarly, the function "add" adds the input with "0". In the both the cases, the output will be same as the input. Hence, the functions {(*),1} and {(+),0} are the perfect examples of monoids.
-
 ### Reiteration Attempt
 
 -   A Monad is an applicative functor. Monad is "stronger" than Applicative, and Applicative is stronger than Functor.
