@@ -21,4 +21,4 @@ Learnings from [Haskell Programming From First Principles](http://haskellbook.co
 - [x] [Chapter 15: Monoid and Semigroup](./Chapters/15MonoidandSemigroup/)
 - [x] [Chapter 16: Functor](./Chapters/16Functor/)
 - [x] [Chapter 17: Applicative](./Chapters/17Applicative/)
-- [ ] [Chapter 18: Monad](./Chapters/18Monad/)
+- [x] [Chapter 18: Monad](./Chapters/18Monad/)
